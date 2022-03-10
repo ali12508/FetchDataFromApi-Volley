@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <androidx.cardview.widget.CardView app:cardUseCompatPadding="true"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content" android:id="@+id/cview"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:id="@+id/rlayout" android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_height="110dp"
+        android:id="@+id/testimg"
+        android:layout_width="110dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:text=" Name"
+        android:layout_toRightOf="@id/testimg"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:id="@+id/rating" android:layout_width="match_parent" android:textSize="25sp" android:textColor="#000" android:text="Rating" android:layout_toRightOf="@id/testimg" android:layout_marginLeft="10dp" android:layout_below="@id/title_tv"/>
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_below="@id/rating"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/testimg"
+            android:text="overview"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
